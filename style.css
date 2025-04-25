@@ -1,0 +1,214 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bar{
+    background-image: url(PORTFOLIOimages/i.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5vw;
+    justify-content:center;
+    height: 6vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.navlist li span1{
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.left{
+    display: flex;
+    padding-left:3rem;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    gap:2.8vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons .fa-brands{
+    color:#bbb;
+    font-size: 2.5vw;
+    animation-duration: 1s;
+    animation-name: slideinleft;
+}
+
+.content{
+    color: white;
+    padding-left: 3rem;
+    animation-duration: 2s;
+}
+.content .intro{
+    font-size: 2.5vw;
+    animation:fade 4s ease;
+}
+.content .intro span{
+    color: rgb(0, 119, 255);
+}
+.content h1{
+    font-size: 5vw;
+    color: rgb(0, 167, 245); 
+    text-shadow:0px 0px 100px rgb(0, 167, 245),0px 0px 50px ;
+    animation:fade 4s ease;
+}
+.content .about{
+    font-size: 1.5vw;
+    color: #fff;
+    max-width: 38vw;
+    height: 5rem;
+    margin:1rem 0 3rem 0;
+    animation: slidetop 500ms linear;
+}
+.content .btn button{
+    border: .1rem solid #4572d3;
+    font-size: 1.5vw;
+    padding: 1vw 1.5vw;
+    border-radius: 5px;
+    animation-duration: 4s;
+    animation-name: fade;
+}
+button:nth-child(1){
+    background:transparent;
+    color:#ffffff83 ;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #ffffff83;
+    margin-left: 2rem;
+}
+
+.details .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left:70%;
+    transform: translate(-30%,-50%);
+    border: .1rem solid white;
+     animation: slideinleftcircle 3s ease-in;
+  
+}
+
+.circle{
+    background-image: url(PORTFOLIOimages/me.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25.8415vw;
+    box-shadow: 0 0 1rem #fff ,inset 0 0 1rem #fff,0 0 2rem #1b62fc,inset 0 0 2rem #1b62fc, 0 0 4rem #034ef1,inset 0 0 4rem #034ef1;
+}
+
+/**HOVER EFFECTS**/
+
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button:nth-child(1):hover{
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px linear-gradient(#fff,#1b62fc),0px 0px 10px; 
+    box-shadow:0px 0px 10px #4572d3,0px 0px 10px ;
+}
+button:nth-child(2):hover{
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px linear-gradient(#fff,#1b62fc),0px 0px 10px ;
+    box-shadow:0px 0px 10px #4572d3,0px 0px 10px ;
+}
+.circle:hover{
+    cursor: pointer;
+    width: 30vw;
+    transition-duration: 1s;
+}
+.navlist li a:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff 30%,#1b62fc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px linear-gradient(#fff 30%,#1b62fc 70%),0 0;
+}
+
+/**ANIMATIONS**/
+
+@keyframes slideinleft {
+    from{
+        margin-left:100%;
+        width:300%;
+        opacity: 0%;
+    }
+    to{
+        margin-left: 0%;
+        width:100%;
+        opacity: 100%;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes slidetop {
+    from{
+        margin-top:20%;
+        width:300%;
+        opacity: 0%;
+    }
+    to{
+        margin-top: 0%;
+        width:100%;
+        opacity: 100%;
+    }
+    
+}
+@keyframes slideinleftcircle {
+    from{
+        margin-left:10%;
+        opacity: 0%;
+        width: 0vw;
+    }
+    to{
+        margin-left: 0%;
+        opacity: 100%;
+        width: 25.8415vw;
+    }
+}
+@keyframes zoomin {
+    from{
+        width:25.8415vw;
+    }
+    to{
+        width:30vw;
+    }
+    
+}

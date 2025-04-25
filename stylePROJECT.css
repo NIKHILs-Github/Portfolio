@@ -1,0 +1,129 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projectbar{
+    background-image: url(PORTFOLIOimages/bgn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.navlist{
+    display: flex;
+    gap: 3.5vw;
+    justify-content:center;
+    height: 6vh;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.navlist li span1{
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/**HOVER EFFECTS**/
+
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button:nth-child(1):hover{
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px linear-gradient(#fff,#1b62fc),0px 0px 10px; 
+    box-shadow:0px 0px 10px #4572d3,0px 0px 10px ;
+}
+button:nth-child(2):hover{
+    background: linear-gradient(#fff,#1b62fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 10px linear-gradient(#fff,#1b62fc),0px 0px 10px ;
+    box-shadow:0px 0px 10px #4572d3,0px 0px 10px ;
+}
+.circle:hover{
+    cursor: pointer;
+    width: 30vw;
+    transition-duration: 1s;
+}
+.navlist li a:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff 30%,#1b62fc 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px linear-gradient(#fff 30%,#1b62fc 70%),0 0;
+}
+
+/**ANIMATIONS**/
+
+@keyframes slideinleft {
+    from{
+        margin-left:100%;
+        width:300%;
+        opacity: 0%;
+    }
+    to{
+        margin-left: 0%;
+        width:100%;
+        opacity: 100%;
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes slidetop {
+    from{
+        margin-top:20%;
+        width:300%;
+        opacity: 0%;
+    }
+    to{
+        margin-top: 0%;
+        width:100%;
+        opacity: 100%;
+    }
+    
+}
+@keyframes slideinleftcircle {
+    from{
+        margin-left:10%;
+        opacity: 0%;
+        width: 0vw;
+    }
+    to{
+        margin-left: 0%;
+        opacity: 100%;
+        width: 25.8415vw;
+    }
+}
+@keyframes zoomin {
+    from{
+        width:25.8415vw;
+    }
+    to{
+        width:30vw;
+    }
+    
+}
