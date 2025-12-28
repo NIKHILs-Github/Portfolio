@@ -212,3 +212,85 @@ button:nth-child(2):hover{
     }
     
 }
+/* =========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navlist {
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: auto;
+    padding: 1rem;
+    position: static;
+  }
+
+  .navlist li a {
+    font-size: 0.9rem;
+  }
+
+  /* MAIN LAYOUT */
+  .bar,
+  .aboutbar,
+  .projectbar,
+  .servicebar {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  /* ICONS */
+  .icons {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .icons .fa-brands {
+    font-size: 1.5rem;
+  }
+
+  /* TEXT */
+  .content {
+    padding-left: 0;
+  }
+
+  .content .intro {
+    font-size: 1.2rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content .about {
+    font-size: 0.9rem;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* BUTTONS */
+  .content .btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .content .btn button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  /* CIRCLE IMAGE */
+  .details {
+    display: none; /* hide big circle on mobile */
+  }
+}
+
